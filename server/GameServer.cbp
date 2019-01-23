@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GameServer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GameServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GameServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Base64.h" />
+		<Unit filename="include/ConnectionHandler.h" />
+		<Unit filename="include/EventLogger.h" />
+		<Unit filename="include/GameEventService.h" />
+		<Unit filename="include/GamePlayer.h" />
+		<Unit filename="include/GameWorld.h" />
+		<Unit filename="include/GeneralInclude.h" />
+		<Unit filename="include/JSON.hpp" />
+		<Unit filename="include/MessageRequest.h" />
+		<Unit filename="include/MessageRespond.h" />
+		<Unit filename="include/NetworkService.h" />
+		<Unit filename="include/SHA1.h" />
+		<Unit filename="src/Base64.cpp" />
+		<Unit filename="src/ConnectionHandler.cpp" />
+		<Unit filename="src/EventLogger.cpp" />
+		<Unit filename="src/GameEventService.cpp" />
+		<Unit filename="src/GamePlayer.cpp" />
+		<Unit filename="src/GameWorld.cpp" />
+		<Unit filename="src/MessageRequest.cpp" />
+		<Unit filename="src/MessageRespond.cpp" />
+		<Unit filename="src/NetworkService.cpp" />
+		<Unit filename="src/SHA1.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

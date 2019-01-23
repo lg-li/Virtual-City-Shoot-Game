@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Shoot in Virtual World</title>
+</head>
+<link href="style.css" rel="stylesheet" />
+
+<body style="font-family:'Microsoft YaHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <div style="position: absolute; top: 5px; left: 5px; z-index: 1024; color: #f7f7f7">
+        <p>生命值：<span id="val_life">[连接中]</span>
+            <br /> 在线玩家数：
+            <span id="val_player_num">1</span>
+            <br /> 得分：
+            <span id="val_score">0</span>分
+        </p>
+    </div>
+    <div id="layer_joystick" style="z-index: 1000;"></div>
+
+    <div id="layer_blood" style="position: absolute; top: 0px; left: 0px; z-index: 999; opacity: 0.3; display: none">
+        <img src="./images/blood.png" />
+    </div>
+    <div id="dead" style="position: absolute; width: 100%; height: 100%; z-index: 998; opacity: 0.4; display: none; background: darkred; vertical-align: center">
+        <div style="text-align:center; color: #ffffff">
+            <p>Game Over</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p style="font-size:30px">已死亡</p>
+            <h4>
+                最终伤害 <span id="final_score">0</span>分
+            </h4>
+        </div>
+    </div>
+    <div id="blocker" style="z-index: 1000">
+        <div id="instructions">
+            <p>
+                <br /><br /><br /><br /><br />
+                <span style="font-size:30px">点击开始</span><br />
+                <br /> (W,A,S,D 移动, SPACE 跳跃, 鼠标视角, 左键射击)
+            </p>
+        </div>
+    </div>
+    <script src='./js/three.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.js'></script>
+    <script src='./js/threex.proceduralcity2.js'></script>
+    <script src='./js/projector.js'></script>
+    <script src='./js/MTLLoader.js'></script>
+    <script src='./js/OBJLoader.js'></script>
+    <script src='./js/howler.js'></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/nipplejs.min.js"></script>
+    <script src="./js/control.js"></script>
+
+</body>
+
+</html>
